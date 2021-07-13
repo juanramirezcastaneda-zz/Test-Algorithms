@@ -1,0 +1,15 @@
+{
+  "name": "test-algorithms",
+  "version": "1.0.0",
+  "description": "generic project for running algorithms",
+  "main": "Duplicates.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "duplicate": "node ./Duplicates.js"
+  },
+  "keywords": [
+    "algorithms"
+  ],
+  "author": "juanramirezcastaneda",
+  "license": "ISC"
+}
