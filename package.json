@@ -5,7 +5,8 @@
   "main": "Duplicates.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "duplicate": "node ./Duplicates.ts"
+    "duplicate": "ts-node ./Duplicates.ts",
+    "newspaper":  "ts-node ./Newspaper.ts"
   },
   "keywords": [
     "algorithms"
@@ -13,6 +14,8 @@
   "author": "juanramirezcastaneda",
   "license": "ISC",
   "devDependencies": {
-    "ts-node": "^10.1.0"
+    "@types/node": "^16.3.1",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5"
   }
 }
