@@ -20,10 +20,6 @@
 const canMakeWordCloud = (np: string[], wc: string[]) => {
 
     for(let el of wc){
-
-        console.log(wc);
-        console.log(wc);
-
         let indexInsideNp = np.indexOf(el);
         if(indexInsideNp === -1){
             return false;
@@ -45,12 +41,27 @@ const wordCloud = ['my', 'city', 'my', 'rules'];
 // const newsPaper = ['my', 'city', 'rules', 'my', 'team', 'wins', 'my'];
 // const wordCloud = ['my', 'rules', 'my', 'city'];
 
-console.log(canMakeWordCloud(newsPaper, wordCloud));
+// console.log(canMakeWordCloud(newsPaper, wordCloud));
 
+const canMakeWordCloudOptimized = (npMap: Map<string, number>, wcV2: string[]) => {
 
-// const npMap = {'my': 3, 'city': 2, 'rules': 4};
-// const workCloudv2 = ['my', 'city', 'drools'];
+    for(let w of wcV2){
+        let key = npMap.get(w);
+        if(key && key > 0){
+            npMap.set(w, key - 1);
+        } else {
+            return false;
+        }
+    }
+    return true;
+};
 
-// for(let elv2 of workCloudv2){
-//     if(npMap[])
-// }
+const newsPaperMap = new Map();
+
+newsPaperMap.set('my', 2);
+newsPaperMap.set('city', 1);
+newsPaperMap.set('rules', 1);
+
+const wordCloudV2 = ['my', 'city'];
+
+console.log(canMakeWordCloudOptimized(newsPaperMap, wordCloudV2));
