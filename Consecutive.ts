@@ -20,5 +20,6 @@ var findConsecutive = (input: number[]) => {
     return res;
 };
 
+var findConsecutiveOptimized = () => {};
 var input = [100, 4, 200, 1, 3, 2];
 console.log(findConsecutive(input));
