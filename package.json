@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "duplicate": "ts-node ./Duplicates.ts",
-    "newspaper":  "ts-node ./Newspaper.ts"
+    "newspaper":  "ts-node ./Newspaper.ts",
+    "consecutive": "ts-node ./Consecutive.ts"
   },
   "keywords": [
     "algorithms"
