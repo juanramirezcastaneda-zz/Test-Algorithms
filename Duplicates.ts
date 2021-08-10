@@ -2,7 +2,7 @@
 // e.g: [1, 1, 1, 2, 3, 3, 4] sorted -> [1, 2, 3, 4] and return 4
 // O(n) complexity
 
-let removeDuplicates = (inputArray: number[]) => {
+function removeDuplicates(inputArray: number[]) {
     let counter = 0;
     let initialLength = inputArray.length;
     for (let i in inputArray) {
@@ -25,3 +25,5 @@ let input =  [1, 1, 1, 2, 3, 3, 4] ;
 console.log('input: ', input);
 console.log('result: ',removeDuplicates(input));
 console.log('output: ', input);
+
+export { removeDuplicates };

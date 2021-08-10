@@ -65,3 +65,5 @@ newsPaperMap.set('rules', 1);
 const wordCloudV2 = ['my', 'city'];
 
 console.log(canMakeWordCloudOptimized(newsPaperMap, wordCloudV2));
+
+export {canMakeWordCloudOptimized};

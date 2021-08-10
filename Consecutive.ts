@@ -23,3 +23,5 @@ var findConsecutive = (input: number[]) => {
 var findConsecutiveOptimized = () => {};
 var input = [100, 4, 200, 1, 3, 2];
 console.log(findConsecutive(input));
+
+export { findConsecutive };
