@@ -6,8 +6,12 @@ function getRandomHtmlDocument() {
     .then(data => data);
 }
 
-function parseRegex(re, str){
-  return re.exec(str)[1];
+function parseRegex(re: RegExp, str: string){
+  const parsedRegex = re.exec(str);
+  if (parsedRegex) {
+    return parsedRegex[1];
+  }
+  return null;
 }
 
 function findTitle(htmlString: string){
