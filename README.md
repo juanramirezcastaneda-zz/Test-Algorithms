@@ -1,0 +1,1 @@
+export default function at the end of each file to prevent managing global variables.
