@@ -26,11 +26,12 @@ const bubbleSort = (arr: number[]) =>  {
   if(doItAgain) {
     bubbleSort(arr)
   };
+  
+  return arr;
 }
 
 console.time('complexitysort');
 
-bubbleSort(list);
-console.log(list); 
+console.log(bubbleSort(list)); 
 
 console.timeEnd('complexitysort');
